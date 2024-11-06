@@ -1,0 +1,136 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.food-category {
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+.singleLine {
+  width: 80px;
+  height: 4px;
+  background-color: #f59e0b;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+}
+.foodcat {
+  padding: 5px;
+  width: 100px;
+  background-color: #f59e0b;
+  border-radius: 10px;
+  color: white;
+}
+.foodcat:hover {
+  background-color: rgb(233, 117, 8);
+}
+.item-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.item-picture {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.nameprice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-price {
+  padding: 5px;
+  width: 70px;
+  background-color: #f59e0b;
+  border-radius: 10px;
+  color: white;
+}
+.description {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 10px 0;
+  padding: 10px;
+
+  background-color: #f9f9f9;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+
+  box-shadow: 0 2px 5px rbga(0, 0, 0, 0.1);
+  text-align: justify;
+  text-justify: inter-word;
+
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+
+  transition: background-color 0.3s ease;
+}
+.description:hover {
+  background-color: #f0f8ff;
+}
+.content {
+  display: flex;
+  gap: 50px;
+}
