@@ -3,14 +3,16 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import ItemCard from "./ItemCard";
-
+import image1 from "/images/foodiesfeed.com_bowl-of-ice-cream-with-chocolate.jpg";
+import image2 from "/images/foodiesfeed.com_bowl-of-ice-cream-with-chocolate.jpg";
+import image3 from "/images/foodiesfeed.com_bowl-of-ice-cream-with-chocolate.jpg";
 const menu = [
   {
     id: 1,
     title: "buttermilk pancakes",
     category: "breakfast",
     price: 15.99,
-    img: "/images/item-1.jpeg",
+    img: image1,
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
@@ -18,7 +20,7 @@ const menu = [
     title: "diner double",
     category: "lunch",
     price: 13.99,
-    img: "/images/item-2.jpeg",
+    img: image2,
     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
   },
   {
@@ -26,7 +28,7 @@ const menu = [
     title: "godzilla milkshake",
     category: "shakes",
     price: 6.99,
-    img: "/images/item-3.jpeg",
+    img: image3,
     desc: `kombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
   },
   {
