@@ -80,20 +80,39 @@ const menu = [
 ];
 
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  function changeCategroy(category) {
+    setSelectedCategory(category);
+  }
+
+  const filteredMenu =
+    selectedCategory === "All"
+      ? menu
+      : menu.filter((item) => item.category === selectedCategory);
+
   return (
     <div className="main">
       <header className="header">
         <h2 className="OurMenu">Our Menu</h2>
         <div className="singleLine"></div>
         <div className="food-category">
-          <button className="foodcat">All</button>
-          <button className="foodcat">Breakfast</button>
-          <button className="foodcat">Lunch</button>
-          <button className="foodcat">Shakes</button>
+          <button className="foodcat" onClick={changeCategroy("All")}>
+            All
+          </button>
+          <button className="foodcat" onClick={changeCategroy("Breakfast")}>
+            Breakfast
+          </button>
+          <button className="foodcat" onClick={changeCategroy("Lunch")}>
+            Lunch
+          </button>
+          <button className="foodcat" onClick={changeCategroy("Shakes")}>
+            Shakes
+          </button>
         </div>
       </header>
       <div className="content">
-        {menu.map((item) => (
+        {filteredMenu.map((item) => (
           <ItemCard
             key={item.id}
             img={item.img}
